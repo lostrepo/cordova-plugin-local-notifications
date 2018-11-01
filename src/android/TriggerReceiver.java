@@ -62,11 +62,11 @@ public class TriggerReceiver extends AbstractTriggerReceiver {
         Context context  = notification.getContext();
         Options options  = notification.getOptions();
         Manager manager  = Manager.getInstance(context);
-        int badge        = options.getBadgeNumber();
+        // int badge        = options.getBadgeNumber();
 
-        if (badge > 0) {
-            manager.setBadge(badge);
-        }
+        // if (badge > 0) {
+            // manager.setBadge(badge);
+        // }
 
         if (options.shallWakeUp()) {
             wakeUp(context);
